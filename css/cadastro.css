@@ -1,0 +1,66 @@
+:root{
+    --backgroundColorBody: #000000; 
+    --backgroundColorFormContainer: rgb(59, 59, 238);
+    --fontColorButtonForm: rgb(59, 59, 238);
+    --fontColorButtonFormHover: #ffffff;
+    --formItemsColor: #ffffff;
+    --fontColorFormTitle: #ffffff;
+    --backgroundColorButtonForm: #ffffff;
+    --backgroundColorButtonFormHover: rgb(186, 186, 255);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    background-color: var(--backgroundColorBody);
+}
+
+#form-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35vh;
+    padding: 40px;
+    background-color: var(--backgroundColorFormContainer);
+    border-radius: 20px;
+}
+
+#form-title{
+    color: var(--fontColorFormTitle);
+    margin-bottom: 30px;
+}
+
+#usuario, #senha, #sobrenome, #confirmSenha{
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid var(--formItemsColor);
+    margin-bottom: 30px;
+    width: 300px;
+    outline: none;
+    color: var(--formItemsColor);
+}
+
+#usuario::placeholder, #senha::placeholder, #sobrenome::placeholder, #confirmSenha::placeholder{
+    color: var(--formItemsColor);
+}
+
+#form-button-enter{
+    text-decoration: none;
+    color: var(--fontColorButtonForm);
+    background-color: var(--backgroundColorButtonForm);
+    padding: 8px;
+    border-radius: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+#form-button-enter:hover{
+    background-color: var(--backgroundColorButtonFormHover);
+    color: var(--fontColorButtonFormHover);
+}
